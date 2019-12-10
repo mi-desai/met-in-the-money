@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Is the Met "in the Money?"</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="chart.min.css" />
+    <!--include libraries and depdendencies -->
+    <script src="code-snippet.min.js"></script>
+    <script src="raphael.min.js"></script>
+    <!--include chart.min.js -->
+    <script src="chart.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" width="100" height="100">
+        <div>
+            <h1>Is the Met "in the Money?" <br>An Exploration of the Ongoing Financial Restructuring from 2016 - Present.</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="inline">
+            <button id="nav-previous">Previous</button>
+            <select>
+            <option value="0">Choose a topic!</option>
+            <option value="1">Budget Deficits</option>
+            <option value="2">Expense Breakdown</option>
+            <option value="3">Revenue Breakdown</option>
+            <option value="4">Admissions Trends</option>
+        </select>
+            <button id="nav-next">Next</button>
+        </div>
+    </nav>
+    <container>
+        <!--INTRO PAGE -->
+        <div id="intro" class="intro">
+            <div id="intro" class="introtext">
+                In April 2016, the <span class="emphasis">Metroplitan Museum of Art</span> announced it was scaling back spending significantly after revealing a persistent <span class="emphasis">$10 million operating deficit</span>. Combined with lower
+                admissions revenues despite a record number of visitors, an expensive plan to acquire the <span class="emphasis">Breuer</span> building from the Whitney, and a (now abandoned) scheme to renovate the "Lila Acheson Wallace" wing, and add
+                a new modern art wing with a total price tag of $700 million, the fiscal situation was becoming strained. The museum's board and trustees implemented a plan to restructure the museum by <span class="emphasis">letting go of dozens of employees</span>,
+                and to lobby the city of New York to start charging <span class="emphasis">mandatory admissions fees</span> to out-of-towners. The new CEO, Dan Weiss, promised the operating budget would be balanced by the end of <span class="emphasis">fiscal year end 2020.</span>                So the question is, have these efforts been successful? And how will it impact the average New Yorker or tourist?
+            </div>
+            <div class="introdisclaimer">
+                Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation,
+                endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under
+                the securities laws of such jurisdiction.
+            </div>
+        </div>
+        <!--END OF INTRO PAGE -->
+
+        <!--PAGE ONE - BUDGET DEFICITS -->
+        <div id="step1" class="stepGroup">
+            <div class="maincontent">
+                <div class="step">
+                    <div class="objectDiv">
+                        <div id="wrapper"></div>
+                        <script src="rev-exp-comp.js"></script>
+                    </div><br><br><br>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                The Situation:
+                                <ul>
+                                    <li>Persistent operating budgetary losses of roughly <span class="emphasis">$10 million per year</span> prior to 2017.</li><br>
+                                    <li>Pre-2016 expansion and spending plans were unsustainable without massive support from endowment.</li><br>
+                                    <li><span class="emphasis">First year of Met Breuer</span> operations took its toll.</li><br>
+                                    <li><span class="emphasis">Cost growth</span> exceeded revenue growth, despite record attendance.</li><br>
+                                    <li><span class="emphasis">Pension and postretirement contributions</span> was a key driver of cost increases.</li>
+                                </ul>
+                                <br> <span class="emphasis">Hover</span> for the Interpretation.
+                            </div>
+                            <div class="flip-card-back">
+                                The Interpretation:
+                                <ul>
+                                    <li>Ordinarily, operating deficits among nonprofits are <span class="emphasis">much more common</span> than in for-profits.</li><br>
+                                    <li>Because so much revenue comes from endowment support and gifts, donors and trustees were unwilling to increase their commitments, so the Met was <span class="emphasis">forced</span> to cut its budget.</li><br>
+                                    <li>But, the Met was between <span class="emphasis">a rock and a hard place:</span> it cannot operate without continual support from donors, but it also can't just start charging visitors for tickets - <span class="emphasis">or can it?</span></li><br>
+                                    <li>What are the areas that are usually cut in a restructuring? Hiring, and staff <span class="emphasis">"redundancies."</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="quoteBox">
+                    <img src="ceo.png" alt="Logo" width="150" height="100">
+                    <div class="quoteText">
+                        <p>"If we do nothing - if we just carry on - 18 months from now, at the beginning of fiscal year 2018, the deficit would be four times bigger. That's not OK, so we're going to take action to control that." - CEO Dan Weiss, 2016</p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation,
+                    endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under
+                    the securities laws of such jurisdiction.
+                </div>
+            </div>
+        </div>
+        <!--END OF PAGE ONE -->
+
+        <!--PAGE TWO - EXPENSE BREAKDOWN -->
+        <div id="step2" class="stepGroup">
+            <div class="maincontent">
+                <div class="step">
+                    <div class="objectDiv">
+                        <div id="wrapperTwo"></div>
+                        <script src="exp-breakdown.js"></script>
+                    </div><br><br><br>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                The Situation:
+                                <ul>
+                                    <li>The largest reduction has been in <span class="emphasis">Administrative Expenses</span>, where almost $10 million has been saved from the yearly budget.</li><br>
+                                    <li>The most variable expense is for <span class="emphasis">Special Exhibitions</span>, which obviously vary from year to year in terms of cost, but may be a worthwhile cost if they drive admissions, membership, or donations.</li><br>
+                                    <li>The addition of the building and personnel expenses related to the operations of the <span class="emphasis">Met Breuer</span> drove most of the cost increases since 2015. </li>
+                                </ul>
+                                <br> <span class="emphasis">Hover</span> for the Interpretation.
+                            </div>
+                            <div class="flip-card-back">
+                                The Interpretation:
+                                <ul>
+                                    <li>According to the CFO, <span class="emphasis">70% of all costs</span> regardless of category relate to employees.</li><br>
+                                    <li>Apart from salaries, costs can be driven by <span class="emphasis">pensions</span>, particularly defined-benefit pension obligation plans.</li><br>
+                                    <li>Lastly, many of the Met's workers are organized into unions, which allows for <span class="emphasis">collective bargaining</span> and makes it very difficult, if not impossible, to cut wages.</li><br>
+                                    <li>So, <span class="emphasis">costs can't really be cut too much</span>, which is makes sense, given that only 34 people were let go during the restructuring. The Met had to <span class="emphasis">make more money</span>                                        instead!</li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="quoteBox">
+                    <img src="breuer.png" alt="Logo" width="150" height="100">
+                    <div class="quoteText">
+                        <p>The Met Breuer (pictured here), purchased from the Whitney Museum of American Art, will cost an additional $17 million per year to run, and has raised the operating budget needed to break even.</p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation,
+                    endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under
+                    the securities laws of such jurisdiction.
+                </div>
+            </div>
+        </div>
+
+        <!--PAGE THREE - REVENUE BREAKDOWN -->
+        <div id="step3" class="stepGroup">
+            <div class="maincontent">
+                <div class="step">
+                    <div class="objectDiv">
+                        <div id="wrapperThree"></div>
+                        <script src="rev-breakdown.js"></script>
+                    </div><br><br><br>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                The Situation:
+                                <ul>
+                                    <li>Since the advent of a new admissions policy in 2017, <span class="emphasis">admissions income</span> has been steadily rising, although it is only the third most important source of income for the Met.</li><br>
+                                    <li>Endowment Support is income generated from the sale of financial securities in the Met's portfolio, or income from it. The Met has <span class="emphasis">heavily relied on its endowment</span> to fund itself.</li><br>
+                                    <li><span class="emphasis">Gifts and donations generated from fundraising</span> is probably the most important source of cash for the Met.</li>
+                                </ul>
+                                <br> <span class="emphasis">Hover</span> for the Interpretation.
+                            </div>
+                            <div class="flip-card-back">
+                                The Interpretation:
+                                <ul>
+                                    <li>The endowment portfolio's <span class="emphasis">investment performance</span> looms large over the Met's restructuring. The museum has benefitted greatly from the growth in equities over the past decade, and a market
+                                        crash or prolonged downturn would be a blow to the operating budget. </li><br>
+                                    <li>The fact that the Met gets so much of its capital needed for operations from gifts and donations makes me <span class="emphasis">dubious</span> as to why they needed to raise money through admissions in the first place.
+                                        </li><br>
+                                    <li>Grants from the city of New York allow the Museum to <span class="emphasis">recover certain costs of operation</span>, but notice that these have not increased in five years.</li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="quoteBox">
+                    <img src="deblasio.png" alt="Logo" width="150" height="100">
+                    <div class="quoteText">
+                        <p>The policy to charge tourists a mandatory admissions fee was only agreed upon by the Mayor's office in exchange for revenue-sharing of $2.8 million per year, the bulk of which is going to fund the "Cultural Development Fund and Institutions
+                        Group."</p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation,
+                    endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under
+                    the securities laws of such jurisdiction.
+                </div>
+            </div>
+        </div>
+
+        <!--PAGE FOUR - ADMISSIONS TRENDS -->
+        
+        <div id="step4" class="stepGroup">
+            <div class="maincontent">
+                <div class="step">
+                    <div class="objectDiv">
+                        <div id="wrapperFour"></div>
+                        <script src="admissions-trends.js"></script>
+                    </div><br><br><br>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                The Situation:
+                                <ul>
+                                                            <li>In 2017, the Met reached a new deal with the city of NY to be able to <span class="emphasis">charge tourists</span> a full ticket price. There had been a decline in admissions revenue ever since the city forced the museum to change
+                            its "recommended" donation for admission to "suggested."</li><br>
+                        <li>While the growth rate in the Met's attendance has led to higher admission revenues, when compared to the total tourism in NYC, no museum or "traditional cultural tourist attraction" has kept up with <span class="emphasis">overall tourism growth</span>,
+                            suggesting tourists prefer to come to New York to shop. </li><br>
+                                </ul>
+                                <br> <span class="emphasis">Hover</span> for the Interpretation.
+                            </div>
+                            <div class="flip-card-back">
+                                The Interpretation:
+                                <ul>
+                                    <li>This trend may signal a <span class="emphasis">shift away</span> from tourist or average New Yorker interests in museums in general.</li><br>
+                                    <li>The tourism policy is also <span class="emphasis">difficult to enforce</span>, since there is little gating of visitors beyond the security screening stage and it is possible for anyone to claim to be a native New Yorker.</li><br>
+                                    <li>Additionally, City Hall only agreed to allow charging tourists in exchange for revenue sharing, and only will only change <span class="emphasis">"suggested"</span> back to <span class="emphasis">"recommended"</span> if grants for
+                                        utilities and maintenance are cut. In others, a <span class="emphasis">net zero gain</span> on the budget problem.</li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="quoteBox">
+                    <img src="nypost.png" alt="Logo" width="150" height="100">
+                    <div class="quoteText">
+                        <p>According to the Post, the number of adult visitors to the Met paying the suggested fee has dropped from 63% in 2004 to 17% today. Take this with a grain of salt! (It's the Post). But it matches similar observations made in this analysis.</p>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation,
+                    endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under
+                    the securities laws of such jurisdiction.
+                </div>
+            </div>
+        </div>
+
+    <script>
+        $(function() {
+            function drawText(event) {
+                $(event.target).parent().find('.popUp').css('visibility', 'visible');
+                console.log("accssesed!")
+            }
+
+            function removeText(event) {
+                $(event.target).parent().find('.popUp').css('visibility', 'hidden');
+            }
+
+            function limitSteps(event) {
+                $("#intro").hide();
+                let stepNo = $(this).val();
+                stepNo = selection + '';
+                $(".stepGroup").hide();
+                if (stepNo === "0") {
+                    $("#intro").show();
+                }
+                else {
+                    $("#step" + stepNo).css("display", "flex");
+                    console.log(stepNo);
+                }
+            }
+
+            let selection = 0;
+
+            function navNext(event) {
+                let select = $(this).parent().find("select");
+                if (selection !== 5) {
+                    ++selection;
+                    console.log(`#'${selection}'#`);
+                    select.change();
+                }
+
+            }
+
+            function navPrev(event) {
+                let select = $(this).parent().find("select");
+                if (selection !== 0) {
+                    --selection;
+                    console.log(`#'${selection}'#`);
+                    select.change();
+                }
+
+            }
+
+            $(".permText").on('click', drawText);
+            $(".popUp").on('click', removeText);
+            $("select").on('change', limitSteps);
+            $(".objectDiv").on('click', drawText);
+            $(".quoteBox").on('click', drawText);
+            $(".objectDiv").on('hover', drawText);
+            $(".quoteBox").on('hover', drawText);
+            $(".permText").on('hover', drawText);
+            $("#nav-next").on('click', navNext);
+            $("#nav-previous").on('click', navPrev);
+
+        });
+    </script>
+</body>
+
+</html>
