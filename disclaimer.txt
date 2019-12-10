@@ -1,0 +1,16 @@
+<div id="intro" class="disclaimer">
+            Disclaimer: The Content is for informational purposes only, you should not construe any such information or other material as legal, tax, investment, financial, or other advice. Nothing contained on this Site constitutes a solicitation, recommendation, endorsement, or offer by Michael Desai or any third party service provider to buy or sell any securities or other financial instruments in this or in in any other jurisdiction in which such solicitation or offer would be unlawful under the securities laws of such jurisdiction.
+        </div>
+        
+
+Persistently negative operating margins means the Met has to consistently either borrow money via debt or withdraw larger-than-projected amounts from its endowment. Over the long term, the endowment has to generate
+                    either a higher positive return on its investment portfolio to keep up with the shortfall in the budget, or additional funds have to be raised from trustees or donations. While expenses higher than revenues is much more normal for
+                    non-profits, it is the persistence of the deficit that is concerning for the future of the Met, rather than its existence in the first place.
+                    
+                    
+                        series: {
+        colors: [
+            '#83b14e', '#458a3f', '#295ba0', '#2a4175', '#289399',
+            '#289399', '#617178', '#8a9a9a', '#516f7d', '#dddddd'
+        ]
+    }
